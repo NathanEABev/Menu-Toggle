@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../imgs/logoIco.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--Cabeça~ho da página-->
+    <header>
+        <!--Logo da empresa-->
+        <img src="../imgs/logo.png" alt="Logo Lumen Fotografia" id="logo">
+
+        <!--barra de navegação-->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#portifolio">Portifólio</a>
+            <a href="#servicos">Serviços</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <!--imagem principal da página (hero image)-->
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 1180px)" srcset="../imgs/hero3.png">
+                <source media="(min-width: 750px)" srcset="../imgs/hero2.png">
+                <img src="../imgs/hero.png" alt="">
+            </picture>
+
+            <!--texto de introdução-->
+            <div id="hero-text">
+                <h1>Capturando Momentos Inesquecíveis</h1>
+                <a href="" class="btn">Agende uma Sessão</a>
+            </div>
+        </div>
+        
+        <section id="home">
+            <div id="desc">
+                <!--Texto de introdução + especialidades-->
+                <div id="desc-text">
+                    <h2>Fotografia que eterniza suas histórias</h2>
+                    <p>
+                        Na Lumen Fotografia, acreditamos que cada momento é único e merece ser eternizado com toda a beleza e emoção que ele carrega. Nossa missão vai além de simplesmente tirar fotos: buscamos contar histórias, registrar sentimentos e transformar instantes em obras de arte.
+                    </p>
+                    <p>
+                        Com anos de experiência no mercado e um olhar sensível para cada detalhe, nossa equipe de fotógrafos profissionais está dedicada a capturar os momentos mais preciosos da sua vida — desde celebrações marcantes até pequenos gestos cotidianos cheios de significado. Cada clique é pensado para que você possa reviver suas lembranças sempre que desejar, transformando experiências em memórias que permanecem para sempre.
+                    </p>
+                </div>
+                <div id=especialidades>
+                    <h2>Nossas especialidades</h2>
+                    <ul>
+                        <!--cards das expecialidades-->
+                        <li id="ex1">
+                            <h4>Casamentos</h4>
+                            <img src="../imgs/exCasamento.jpg" alt="Pessoas brindando em um casamento" id="imgEx1" class="exImgs">
+                        </li>
+                        <li id="ex2">
+                            <h4>Festas</h4>
+                            <img src="../imgs/exFesta.jpeg" alt="Grupo de 5 pessoas posando para foto em uma festa" id="imgEx2" class="exImgs">
+                        </li>
+                        <li id="ex3">
+                            <h4>Eventos corporativos</h4>
+                            <img src="../imgs/exCorporativo.jpg" alt="Pessoas tomando champanhe em um evento corporativo" id="imgEx3" class="exImgs">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="portifolio">
+            <!--Galeria de fotos-->
+            <h2>Portifólio</h2>
+            <div id="galeria">
+                <img src="../imgs/gale1.jpg" class="galeriaImgs">
+                <img src="../imgs/gale2.jpg" class="galeriaImgs">
+                <img src="../imgs/gale3.jpg" class="galeriaImgs">
+                <img src="../imgs/gale4.jpg" class="galeriaImgs">
+                <img src="../imgs/gale5.jpg" class="galeriaImgs">
+                <img src="../imgs/gale6.jpg" class="galeriaImgs">
+            </div>
+        </section>
+        <section id="servicos"></section>
+    </main>
+
+    <!--elementos de sobreposição-->
+    <div id="overlay">
+        <img src="" id="imgOverlay" style="display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
