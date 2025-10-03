@@ -6,6 +6,7 @@ const overlay = document.getElementById("overlay");
 const imgsEx = document.querySelectorAll(".exImgs");
 const imgOverlay = document.getElementById("imgOverlay");
 const imgGale = document.querySelectorAll(".galeriaImgs")
+const serve = document.querySelectorAll(".servico");
 
 //função para ampliar as imagens ao clicar
 
@@ -23,6 +24,16 @@ imgGale.forEach((img) => {
     img.addEventListener("click", () => {
         overlay.style.display = "block";
         let novoSRC = img.src;
+        imgOverlay.src = novoSRC;
+        imgOverlay.style.display = "block";
+        document.body.style.overflow = "hidden"
+    })
+})
+
+serve.forEach((img) => {
+    img.addEventListener("click", () => {
+        overlay.style.display = "block";
+        let novoSRC = img.querySelector("img").src;
         imgOverlay.src = novoSRC;
         imgOverlay.style.display = "block";
         document.body.style.overflow = "hidden"
