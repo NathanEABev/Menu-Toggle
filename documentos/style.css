@@ -1,6 +1,6 @@
-/*Configurações gerais*/
-
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*variáveis de cores*/
 
 :root {
     --dourado: #FFCB0E;
@@ -8,6 +8,8 @@
     --azul-escuro: #1B4B4B;
     --fundo: #EBF5EE;
 }
+
+/*Configurações gerais*/
 
 * {
     margin: 0;
@@ -246,6 +248,35 @@ h2 {
     max-width: 85%;
     max-height: 85%;
     z-index: 101;
+}
+
+/*sobre*/
+
+#sobre {
+    margin: 30px auto 0;
+    width: 80%;
+    max-width: 1000px;
+}
+
+#autor {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 25px;
+    border: #FFCB0E 2px solid;
+    border-radius: 150px;
+    float: inline-start;
+    margin-right: 50px;
+}
+
+#autor img {
+    width: 100%;border-radius: 150px;
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 /*responsividade*/
